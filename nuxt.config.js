@@ -36,9 +36,4 @@ export default {
   build: {},
 
   serverMiddleware: ['~/api'],
-
-  publicRuntimeConfig: {
-    vercel: process.env.VERCEL,
-    vercelUrl: process.env.VERCEL_URL,
-  },
 }

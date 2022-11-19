@@ -1,4 +1,3 @@
-export default function ({ $axios, $config }) {
-  const baseUrl = $config.vercel ? $config.vercelUrl : window.location.host
-  $axios.setBaseURL(`https://${window.location.host}`)
+export default function ({ $axios }) {
+  $axios.setBaseURL(window.location.origin)
 }
