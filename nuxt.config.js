@@ -38,6 +38,8 @@ export default {
   serverMiddleware: ['~/api'],
 
   axios: {
-    baseUrl: '/',
+    baseUrl: process.env.VERCEL
+      ? `https://${process.env.VERCEL_URL}/`
+      : 'http://localhost:3000/',
   },
 }
