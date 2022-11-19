@@ -37,9 +37,7 @@ export default {
 
   serverMiddleware: ['~/api'],
 
-  publicRuntimeConfig: {
-    axios: {
-      browserBaseURL: process.env.BROWSER_BASE_URL,
-    },
+  axios: {
+    baseUrl: '/',
   },
 }
