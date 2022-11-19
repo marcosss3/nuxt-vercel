@@ -3,7 +3,11 @@
   "builds": [
     {
       "src": "nuxt.config.js",
-      "use": "@nuxtjs/vercel-builder@0.22.1"
+      "use": "@nuxtjs/vercel-builder@0.22.1",
+      "config": {
+        "internalServer": true,
+        "serverFiles": ["api/**"]
+      }
     }
   ]
 }
