@@ -36,4 +36,10 @@ export default {
   build: {},
 
   serverMiddleware: ['~/api'],
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BROWSER_BASE_URL,
+    },
+  },
 }
