@@ -55,9 +55,6 @@
           Welcome to your Nuxt Application
         </h2>
         <p class="mt-3 text-gray-600">
-          {{ $config.vercelUrl }}
-        </p>
-        <p class="mt-3 text-gray-600">
           {{ text }}
         </p>
         <p class="mt-3 text-gray-600">
